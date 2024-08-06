@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative and professional portfolio website">
+    <meta name="keywords" content="portfolio, web development, projects, contact, skills">
+    <title>Creative Portfolio</title>
+    <link rel="stylesheet" href="creative.css">
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation">
+            <div class="logo">MyPortfolio</div>
+            <ul id="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section id="hero" role="region" aria-labelledby="hero-heading">
+        <div class="hero-content">
+            <h1 id="hero-heading">Welcome to My Portfolio</h1>
+            <p>Your tagline goes here</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+    <section id="about" role="region" aria-labelledby="about-heading">
+        <h2 id="about-heading">About Me</h2>
+        <p>Information about you goes here. This section can include your biography, background, and professional experience.</p>
+    </section>
+    <section id="portfolio" role="region" aria-labelledby="portfolio-heading">
+        <h2 id="portfolio-heading">Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+    <section id="skills" role="region" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-bar">
+                <span><i class="fab fa-html5"></i> HTML</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span><i class="fab fa-css3-alt"></i> CSS</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </div>
+            <!-- Add more skills as needed -->
+        </div>
+    </section>
+    <section id="contact" role="form" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer role="contentinfo">
+        <p>&copy; 2024 Esam Mahmud. All rights reserved.</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="creative.js"></script>
+</body>
+</html>
+
